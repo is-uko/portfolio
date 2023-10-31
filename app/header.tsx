@@ -13,13 +13,9 @@ export function Header() {
   return (
     <div className="pb-10">
       <div
-        className={
-          inView
-            ? "px-10 py-5 flex justify-between fixed left-0 right-0 bg-green-500 bg-opacity-40 duration-500"
-            : "px-10 py-5 flex justify-between fixed left-0 right-0 bg-green-500 duration-500"
-        }
+        className="px-10 py-5 flex flex-col md:flex-row justify-between fixed left-0 right-0 bg-green-500"
       >
-        <Link href="/" className="text-white">繊細ガジェットレビューWEB制作部</Link>
+        <Link href="/" className="text-white text-center pb-5 md:pb-0">繊細ガジェットレビューWEB制作部</Link>
         <nav className="flex justify-between text-white">
           <Link className="pr-5" href="/articles">
             ブログ
