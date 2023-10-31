@@ -3,10 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import mainVisual from "../public/mainvisual.jpg";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 export function Header() {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <div className="pb-10">
@@ -24,7 +24,7 @@ export function Header() {
           <Link href="privacy-policy">プライバシーポリシー</Link>
         </nav>
       </div>
-      {router.pathname === "/" && (
+      {pathname === "/" && (
         <Image
           className="h-screen object-cover"
           src={mainVisual}
