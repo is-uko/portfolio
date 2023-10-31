@@ -28,7 +28,7 @@ export default function Portfolios() {
   return (
     <>
       <Header></Header>
-      <div className="w-11/12 mx-auto pb-10 opacity-1 duration-500">
+      <div className="w-11/12 mx-auto pt-16 pb-10 opacity-1 duration-500">
         <h2 className="text-3xl text-center pb-5">ポートフォリオ</h2>
         <div className="text-center grid grid-cols-1 lg:grid-cols-3 gap-5">
           {DATA.map((data) => {
